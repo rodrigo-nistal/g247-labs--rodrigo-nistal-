@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!-- Autor: Rodrigo Nistal Fraila -->
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Acceso de usuarios | UFC</title>
+</head>
+<body>
+    <header>
+        <h1>Accede a tu cuenta</h1>
+        <p>Tu espacio para seguir el mundo de UFC.</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="eventos.html">Eventos</a>
+        <a href="peleadores.html">Peleadores</a>
+        <a href="entradas.html">Entradas</a>
+        <a href="login.html">Acceso</a>
+        <a href="resultados.html">Resultados</a>
+    </nav>
+
+    <main>
+        <section id="iniciar-sesion">
+            <h2>Iniciar sesión</h2>
+
+            <form>
+                <p>
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email"
+                           id="correo"
+                           autocomplete="username"
+                           required>
+                </p>
+
+                <p>
+                    <label for="contrasena">Contraseña:</label>
+                    <input type="password"
+                           id="contrasena"
+                           minlength="8"
+                           autocomplete="current-password"
+                           aria-describedby="ayuda-contrasena"
+                           required>
+                </p>
+
+                <p id="ayuda-contrasena">
+                    La contraseña debe tener al menos 8 caracteres.
+                </p>
+
+                <button type="submit">Sign in</button>
+            </form>
+        </section>
+
+        <section id="informacion-acceso">
+            <h2>Sobre este formulario</h2>
+            <p>Este formulario forma parte de una práctica académica.
+                Todavía no permite crear cuentas ni iniciar sesión.
+            </p>
+            <p>Puedes seguir consultando los
+                <a href="eventos.html">eventos</a> y los
+                <a href="resultados.html">resultados</a>
+                sin identificarte.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Rodrigo Nistal Fraila. Web académica sobre la UFC.</p>
+        <p>Consulta más información en la
+            <a href="https://www.ufc.com/">web oficial de UFC</a>.
+        </p>
+        <p><a href="index.html">Volver al inicio</a></p>
+    </footer>
+</body>
+</html>
